@@ -1,0 +1,47 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.calculator{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 500px;
+}
+
+.calculator__inner{    
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__top{
+    height: 50px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.calculator__value{
+    padding: 14px 10px;
+    font-size: 20px;
+}
+
+.calculator__btns{
+    display: grid;
+    grid-template-rows: 35px 35px 35px 35px 35px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.btn{
+    cursor: pointer;
+}
